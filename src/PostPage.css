@@ -1,0 +1,75 @@
+/* PAGE CONTAINER - centers content vertically stacked */
+.post-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  background: #f4f4f9;
+  width: 100%;
+}
+
+/* CARD WRAPPER - this MUST match .post-card in JSX */
+.post-card {
+  background: white;
+  border-radius: 10px;
+  max-width: 650px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;   /* ★ forces top-to-bottom layout */
+}
+
+/* TITLE */
+.post-card h1 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* IMAGE WRAPPER (same system as PostFeed) */
+.post-card-image-wrapper {
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* IMAGE ITSELF */
+.post-card-image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* PARAGRAPH TEXT */
+.post-card p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* FOOTER ROW */
+.post-card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* BUTTON */
+.upvote-button {
+  background: #0066cc;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.upvote-button:hover {
+  background: #004d99;
+}
