@@ -11,6 +11,7 @@
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+
 }
 
 .post-card:hover {
@@ -56,4 +57,33 @@
 
 .view-post-link:hover {
   color: #473f97;
+}
+
+
+.sort-controls {
+  display: flex;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.sort-button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+  color:black;
+}
+
+.sort-button:hover {
+  background: #f0f0f0;
+}
+
+/* Active button */
+.sort-button.active {
+  background: #6a67ce;
+  color: white;
+  border-color: #6a67ce;
 }
